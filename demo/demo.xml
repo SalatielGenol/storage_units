@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="measure_unit_1" model="storage_units.measure_unit">
+            <field name="name">kg</field>
+        </record>
+        <record id="measure_unit_2" model="storage_units.measure_unit">
+            <field name="name">elementos</field>
+        </record>
+        <record id="type_1" model="storage_units.type">
+            <field name="name">Estanteria</field>
+        </record>
+        <record id="item_1" model="storage_units.item">
+            <field name="name">Objeto de ejemplo 1</field>
+            <field name="measure_unit" ref="measure_unit_1"/>
+        </record>
+        <record id="item_2" model="storage_units.item">
+            <field name="name">Objeto de ejemplo 2</field>
+            <field name="measure_unit" ref="measure_unit_2"/>
+        </record>
+        <record id="module_1" model="storage_units.module">
+            <field name="name">El Castro</field>
+            <field name="address">Rúa Celso Emilio Ferreiro, 5</field>
+            <field name="map">https://maps.app.goo.gl/CPXTxWqcrxacP1D66</field>
+            <field name="door">34</field>
+            <field name="blueprint" type="base64"
+                   file="storage_units/static/img/storage-blueprint-demo.png"/>
+        </record>
+        <record id="space_1" model="storage_units.space">
+            <field name="name">z1</field>
+            <field name="type" eval="[(6, 0, [ref('type_1')])]"/>
+            <field name="location">A2-E2</field>
+            <field name="module" ref="module_1"/>
+        </record>
+        <record id="item_stock_1" model="storage_units.item_stock">
+            <field name="name">5</field>
+            <field name="item" ref="item_1"/>
+            <field name="space" ref="space_1"/>
+        </record>
+        <record id="item_stock_2" model="storage_units.item_stock">
+            <field name="name">2</field>
+            <field name="item" ref="item_2"/>
+            <field name="space" ref="space_1"/>
+        </record>
+    </data>
+</odoo>

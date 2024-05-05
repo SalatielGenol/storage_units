@@ -1,0 +1,201 @@
+<odoo>
+    <data>
+        <!-- explicit list view definition -->
+
+        <record model="ir.ui.view" id="storage_units.module_list">
+            <field name="name">storage_units module list</field>
+            <field name="model">storage_units.module</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="address"/>
+                    <field name="map" widget="url"/>
+                    <field name="door"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="storage_units.module_form">
+            <field name="name">storage_units module form</field>
+            <field name="model">storage_units.module</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <group>
+                                <separator string="Information"/>
+                                <field name="name"/>
+                                <field name="address"/>
+                                <field name="door"/>
+                                <field name="map" widget="url"/>
+                            </group>
+                            <group>
+                                <separator string="Blueprint"/>
+                                <field name="blueprint" string="" widget="image"/>
+                            </group>
+                        </group>
+                        <group>
+                            <separator string="Comments"/>
+                            <field name="comments" string=""/>
+                        </group>
+                        <notebook>
+                            <page string="Spaces">
+                                <field name="spaces">
+                                    <tree>
+                                        <field name="name"/>
+                                        <field name="type" widget="many2many_tags"/>
+                                        <field name="location"/>
+                                        <field name="items"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="storage_units.measure_unit_list">
+            <field name="name">storage_units measure_unit list</field>
+            <field name="model">storage_units.measure_unit</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="storage_units.item_list">
+            <field name="name">storage_units item list</field>
+            <field name="model">storage_units.item</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="measure_unit"/>
+                    <field name="item_stock"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="storage_units.item_form">
+            <field name="name">storage_units item form</field>
+            <field name="model">storage_units.item</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="measure_unit"/>
+                        </group>
+                        <group>
+                            <field name="item_stock">
+                                <tree>
+                                    <field name="module"/>
+                                    <field name="space"/>
+                                    <field name="name"/>
+                                </tree>
+                            </field>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="storage_units.space_list">
+            <field name="name">storage_units space list</field>
+            <field name="model">storage_units.space</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="type" widget="many2many_tags"/>
+                    <field name="location"/>
+                    <field name="module"/>
+                    <field name="items"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="storage_units.space_form">
+            <field name="name">storage_units space form</field>
+            <field name="model">storage_units.space</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="name"/>
+                                <field name="type" widget="many2many_tags"/>
+                            </group>
+                            <group>
+                                <field name="location"/>
+                                <field name="module"/>
+                            </group>
+                            <field name="items">
+                                <tree>
+                                    <field name="item"/>
+                                    <field name="name"/>
+                                    <field name="measure_unit"/>
+                                </tree>
+                            </field>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- actions opening views on models -->
+
+        <record model="ir.actions.act_window" id="storage_units.action_module_window">
+            <field name="name">Modules</field>
+            <field name="res_model">storage_units.module</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record model="ir.actions.act_window" id="storage_units.action_space_window">
+            <field name="name">Spaces</field>
+            <field name="res_model">storage_units.space</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record model="ir.actions.act_window" id="storage_units.action_item_window">
+            <field name="name">Items</field>
+            <field name="res_model">storage_units.item</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <!-- server action to the one above -->
+        <!--
+            <record model="ir.actions.server" id="trasteros.action_server">
+              <field name="name">trasteros server</field>
+              <field name="model_id" ref="model_trasteros_trasteros"/>
+              <field name="state">code</field>
+              <field name="code">
+                action = {
+                  "type": "ir.actions.act_window",
+                  "view_mode": "tree,form",
+                  "res_model": model._name,
+                }
+              </field>
+            </record>
+        -->
+
+        <!-- Top menu item -->
+
+        <menuitem name="Storage Units" id="storage_units.menu_root"/>
+
+        <!-- menu categories -->
+
+        <menuitem name="Management" id="storage_units.menu_1" parent="storage_units.menu_root"/>
+
+        <!-- actions -->
+
+        <menuitem name="Modules" id="storage_units.menu_storage_units_list" parent="storage_units.menu_1"
+                  action="storage_units.action_module_window"/>
+
+        <menuitem name="Spaces" id="storage_units.menu_space_list" parent="storage_units.menu_1"
+                  action="storage_units.action_space_window"/>
+
+        <menuitem name="Items" id="storage_units.menu_item_list"
+                  parent="storage_units.menu_1" action="storage_units.action_item_window"/>
+
+    </data>
+</odoo>

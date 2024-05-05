@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_storage_units_module,storage_units.module,model_storage_units_module,base.group_user,1,1,1,1
+access_storage_units_space,storage_units.space,model_storage_units_space,base.group_user,1,1,1,1
+access_storage_units_item,storage_units.item,model_storage_units_item,base.group_user,1,1,1,1
+access_storage_units_item_stock,storage_units.item_stock,model_storage_units_item_stock,base.group_user,1,1,1,1
+access_storage_units_measure_unit,storage_units.measure_unit,model_storage_units_measure_unit,base.group_user,1,1,1,1
+access_storage_units_type,storage_units.type,model_storage_units_type,base.group_user,1,1,1,1

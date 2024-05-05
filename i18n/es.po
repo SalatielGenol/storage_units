@@ -1,0 +1,234 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* storage_units
+#
+# Translators:
+# Salatiel Genol, 2024
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0-20240424\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-05-03 23:54+0000\n"
+"PO-Revision-Date: 2024-05-03 23:54+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: storage_units
+#: model:ir.model.fields,field_description:storage_units.field_storage_units_module__address
+msgid "Address"
+msgstr "Dirección"
+
+#. module: storage_units
+#: model:ir.model.fields,field_description:storage_units.field_storage_units_module__blueprint
+#: model_terms:ir.ui.view,arch_db:storage_units.module_form
+msgid "Blueprint"
+msgstr "Plano"
+
+#. module: storage_units
+#: model:ir.model.fields,field_description:storage_units.field_storage_units_module__comments
+#: model_terms:ir.ui.view,arch_db:storage_units.module_form
+msgid "Comments"
+msgstr "Observaciones"
+
+#. module: storage_units
+#: model:ir.model.fields,field_description:storage_units.field_storage_units_item__create_uid
+#: model:ir.model.fields,field_description:storage_units.field_storage_units_item_stock__create_uid
+#: model:ir.model.fields,field_description:storage_units.field_storage_units_measure_unit__create_uid
+#: model:ir.model.fields,field_description:storage_units.field_storage_units_module__create_uid
+#: model:ir.model.fields,field_description:storage_units.field_storage_units_space__create_uid
+#: model:ir.model.fields,field_description:storage_units.field_storage_units_type__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: storage_units
+#: model:ir.model.fields,field_description:storage_units.field_storage_units_item__create_date
+#: model:ir.model.fields,field_description:storage_units.field_storage_units_item_stock__create_date
+#: model:ir.model.fields,field_description:storage_units.field_storage_units_measure_unit__create_date
+#: model:ir.model.fields,field_description:storage_units.field_storage_units_module__create_date
+#: model:ir.model.fields,field_description:storage_units.field_storage_units_space__create_date
+#: model:ir.model.fields,field_description:storage_units.field_storage_units_type__create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: storage_units
+#: model:ir.model.fields,field_description:storage_units.field_storage_units_item__display_name
+#: model:ir.model.fields,field_description:storage_units.field_storage_units_item_stock__display_name
+#: model:ir.model.fields,field_description:storage_units.field_storage_units_measure_unit__display_name
+#: model:ir.model.fields,field_description:storage_units.field_storage_units_module__display_name
+#: model:ir.model.fields,field_description:storage_units.field_storage_units_space__display_name
+#: model:ir.model.fields,field_description:storage_units.field_storage_units_type__display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: storage_units
+#: model:ir.model.fields,field_description:storage_units.field_storage_units_module__door
+msgid "Door"
+msgstr "Puerta"
+
+#. module: storage_units
+#: model:ir.model.fields,field_description:storage_units.field_storage_units_item__id
+#: model:ir.model.fields,field_description:storage_units.field_storage_units_item_stock__id
+#: model:ir.model.fields,field_description:storage_units.field_storage_units_measure_unit__id
+#: model:ir.model.fields,field_description:storage_units.field_storage_units_module__id
+#: model:ir.model.fields,field_description:storage_units.field_storage_units_space__id
+#: model:ir.model.fields,field_description:storage_units.field_storage_units_type__id
+msgid "ID"
+msgstr "ID"
+
+#. module: storage_units
+#: model_terms:ir.ui.view,arch_db:storage_units.module_form
+msgid "Information"
+msgstr "Información"
+
+#. module: storage_units
+#: model:ir.model.fields,field_description:storage_units.field_storage_units_item__item_stock
+msgid "Item Stock"
+msgstr "Inventario"
+
+#. module: storage_units
+#: model:ir.model.fields,field_description:storage_units.field_storage_units_item__name
+#: model:ir.model.fields,field_description:storage_units.field_storage_units_item_stock__item
+msgid "Item name"
+msgstr "Nombre del artículo"
+
+#. module: storage_units
+#: model:ir.actions.act_window,name:storage_units.action_item_window
+#: model:ir.model.fields,field_description:storage_units.field_storage_units_measure_unit__items
+#: model:ir.model.fields,field_description:storage_units.field_storage_units_space__items
+#: model:ir.ui.menu,name:storage_units.menu_item_list
+msgid "Items"
+msgstr "Artículos"
+
+#. module: storage_units
+#: model:ir.model.fields,field_description:storage_units.field_storage_units_item____last_update
+#: model:ir.model.fields,field_description:storage_units.field_storage_units_item_stock____last_update
+#: model:ir.model.fields,field_description:storage_units.field_storage_units_measure_unit____last_update
+#: model:ir.model.fields,field_description:storage_units.field_storage_units_module____last_update
+#: model:ir.model.fields,field_description:storage_units.field_storage_units_space____last_update
+#: model:ir.model.fields,field_description:storage_units.field_storage_units_type____last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: storage_units
+#: model:ir.model.fields,field_description:storage_units.field_storage_units_item__write_uid
+#: model:ir.model.fields,field_description:storage_units.field_storage_units_item_stock__write_uid
+#: model:ir.model.fields,field_description:storage_units.field_storage_units_measure_unit__write_uid
+#: model:ir.model.fields,field_description:storage_units.field_storage_units_module__write_uid
+#: model:ir.model.fields,field_description:storage_units.field_storage_units_space__write_uid
+#: model:ir.model.fields,field_description:storage_units.field_storage_units_type__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: storage_units
+#: model:ir.model.fields,field_description:storage_units.field_storage_units_item__write_date
+#: model:ir.model.fields,field_description:storage_units.field_storage_units_item_stock__write_date
+#: model:ir.model.fields,field_description:storage_units.field_storage_units_measure_unit__write_date
+#: model:ir.model.fields,field_description:storage_units.field_storage_units_module__write_date
+#: model:ir.model.fields,field_description:storage_units.field_storage_units_space__write_date
+#: model:ir.model.fields,field_description:storage_units.field_storage_units_type__write_date
+msgid "Last Updated on"
+msgstr "Última actualización en"
+
+#. module: storage_units
+#: model:ir.model.fields,field_description:storage_units.field_storage_units_space__location
+msgid "Location"
+msgstr "Ubicación"
+
+#. module: storage_units
+#: model:ir.ui.menu,name:storage_units.menu_1
+msgid "Management"
+msgstr "Gestión"
+
+#. module: storage_units
+#: model:ir.model.fields,field_description:storage_units.field_storage_units_module__map
+msgid "Map"
+msgstr "Mapa"
+
+#. module: storage_units
+#: model:ir.model.fields,field_description:storage_units.field_storage_units_item__measure_unit
+#: model:ir.model.fields,field_description:storage_units.field_storage_units_item_stock__measure_unit
+#: model:ir.model.fields,field_description:storage_units.field_storage_units_measure_unit__name
+msgid "Measure Unit"
+msgstr "Unidad de medida"
+
+#. module: storage_units
+#: model:ir.model.fields,field_description:storage_units.field_storage_units_item_stock__module
+#: model:ir.model.fields,field_description:storage_units.field_storage_units_space__module
+msgid "Module"
+msgstr "Módulo"
+
+#. module: storage_units
+#: model:ir.actions.act_window,name:storage_units.action_module_window
+#: model:ir.ui.menu,name:storage_units.menu_storage_units_list
+msgid "Modules"
+msgstr "Módulos"
+
+#. module: storage_units
+#: model:ir.model.fields,field_description:storage_units.field_storage_units_module__name
+#: model:ir.model.fields,field_description:storage_units.field_storage_units_space__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: storage_units
+#: model:ir.model.fields,field_description:storage_units.field_storage_units_item_stock__name
+msgid "Quantity"
+msgstr "Cantidad"
+
+#. module: storage_units
+#: model:ir.model.fields,field_description:storage_units.field_storage_units_item_stock__space
+#: model:ir.model.fields,field_description:storage_units.field_storage_units_type__space
+msgid "Space"
+msgstr "Espacio"
+
+#. module: storage_units
+#: model:ir.actions.act_window,name:storage_units.action_space_window
+#: model:ir.model.fields,field_description:storage_units.field_storage_units_module__spaces
+#: model:ir.ui.menu,name:storage_units.menu_space_list
+#: model_terms:ir.ui.view,arch_db:storage_units.module_form
+msgid "Spaces"
+msgstr "Espacios"
+
+#. module: storage_units
+#: model:ir.ui.menu,name:storage_units.menu_root
+msgid "Storage Units"
+msgstr "Trasteros"
+
+#. module: storage_units
+#: model:ir.model.fields,field_description:storage_units.field_storage_units_space__type
+#: model:ir.model.fields,field_description:storage_units.field_storage_units_type__name
+msgid "Type"
+msgstr "Tipo"
+
+#. module: storage_units
+#: model:ir.model,name:storage_units.model_storage_units_item
+msgid "storage_units.item"
+msgstr "trasteros.articulo"
+
+#. module: storage_units
+#: model:ir.model,name:storage_units.model_storage_units_item_stock
+msgid "storage_units.item_stock"
+msgstr "trasteros.inventario"
+
+#. module: storage_units
+#: model:ir.model,name:storage_units.model_storage_units_measure_unit
+msgid "storage_units.measure_unit"
+msgstr "trasteros.unidad_de_medida"
+
+#. module: storage_units
+#: model:ir.model,name:storage_units.model_storage_units_module
+msgid "storage_units.module"
+msgstr "trasteros.modulo"
+
+#. module: storage_units
+#: model:ir.model,name:storage_units.model_storage_units_space
+msgid "storage_units.space"
+msgstr "trasteros.espacio"
+
+#. module: storage_units
+#: model:ir.model,name:storage_units.model_storage_units_type
+msgid "storage_units.type"
+msgstr "trasteros.tipo"
